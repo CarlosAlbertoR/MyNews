@@ -1,1 +1,1 @@
-require "index.html"
+MyNews
