@@ -1,1 +1,1 @@
-MyNews
+My News
