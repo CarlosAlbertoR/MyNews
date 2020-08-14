@@ -70,6 +70,7 @@ ul {
     top: 15px;
     right: 20px;
     z-index: 2;
+    display: none;
 }
 
 /*showcase*/
@@ -235,6 +236,10 @@ hr{
 
 /*Cambio a dispositivo movil*/
 @media (max-width: 700px){
+    .menu-btn{
+        display: block;
+    }
+
     .nav-main ul.nav-menu{
         display: block;
         position: absolute;
@@ -245,6 +250,7 @@ hr{
         padding: 30px;
         opacity: 0.9;
         transform: translateX(-500px);
+        transition: transform .5s ease-in-out;
     }
 
     .nav-main ul.nav-menu.show{
@@ -268,5 +274,29 @@ hr{
     .card-banner-one .content,
     .card-banner-two .content{
         width: 80%;
+    }
+}
+
+@media (max-width: 500px){
+    .menu-btn{
+        display: block;
+    }
+    
+    .news-cards{
+        grid-template-columns: 1fr;
+    }
+
+    .news-cards img{
+        height: 270px;
+    }
+
+    .card-banner-one .content,
+    .card-banner-two .content{
+        width: 100%;
+        padding: 60px 20px;
+    }
+
+    .footer-container{
+        grid-template-columns: repeat(2, 1fr);
     }
 }
